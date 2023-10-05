@@ -14,11 +14,11 @@ function Tile({hog}){
     ]
 
     return(
-        <div className="pigTile" onClick={handleClick}>
+        <li className="pigTile" onClick={handleClick}>
             <h3>{hog.name}</h3>
             <img src={hog.image}/>
             {isClicked ? addedDetails : null}
-        </div>
+        </li>
     )
 }
 
